@@ -1,6 +1,8 @@
-package org.example.portfolioanalysisapi.model;
+package org.example.portfolioanalysisapi.portfolio;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import org.example.portfolioanalysisapi.asset.Asset;
 
 import java.math.BigDecimal;
 
@@ -14,6 +16,7 @@ public class PortfolioAsset {
     @GeneratedValue ( strategy = GenerationType.IDENTITY)
     private long id;
 
+    @JsonIgnore
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "portfolio_id", nullable = false)
     private Portfolio portfolio;

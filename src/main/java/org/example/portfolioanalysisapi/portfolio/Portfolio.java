@@ -1,6 +1,7 @@
-package org.example.portfolioanalysisapi.model;
+package org.example.portfolioanalysisapi.portfolio;
 
 import jakarta.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +39,8 @@ public class Portfolio {
         return holdings;
     }
 
-    public void setHoldings(List<PortfolioAsset> holdings) {
+    public void setHoldings() {
         this.holdings = holdings;
     }
 }
+

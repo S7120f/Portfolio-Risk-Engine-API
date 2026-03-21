@@ -1,4 +1,4 @@
-package org.example.portfolioanalysisapi.model;
+package org.example.portfolioanalysisapi.asset;
 
 import jakarta.persistence.*;
 

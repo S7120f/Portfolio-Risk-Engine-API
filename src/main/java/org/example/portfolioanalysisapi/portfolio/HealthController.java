@@ -1,4 +1,4 @@
-package org.example.portfolioanalysisapi.controller;
+package org.example.portfolioanalysisapi.portfolio;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
